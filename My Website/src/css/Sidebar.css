@@ -1,0 +1,48 @@
+/* styles.css */
+
+.hamburger-menu {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    cursor: pointer;
+    z-index: 30; 
+  }
+  
+  .Sidebar-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    z-index: 1;
+    background-color: #f4f4f4;
+    transition: transform 0.4s ease;
+    transform: translateX(-100%); 
+  }
+  
+  .Sidebar-container.open {
+    transform: translateX(0); 
+  }
+  
+  .Sidebar-container .baslik {
+    padding: 15px;
+    background-color: #ccc;
+    text-align: center;
+  }
+  
+  .Sidebar-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .Sidebar-container ul li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    
+    
+  }
+  .Sidebar-container ul li:hover{
+    background-color: hsl(0, 0%, 80%);
+  }
+  
